@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="background">
+            <div class="backgroundTop">
+                <div class="backgroundLogoColor">
+                    <img src="images/logo.png" alt="Sobolanus maximus" class="backgroundLogoImg" width="150">
+                    <div class="backgroundLogoText">ORGRIMMAR</div>
+                </div>
+            </div>
+            <div class="backgroundBottom">
+                <p class="photo">Photo by Delaco on <a href="https://worldofwarcraft.blizzard.com/en-us/">World of
+                        Warcraft</a></p>
+            </div>
+        </div>
+        <div class="form">
+            <div class="formTop">
+                <div class="formTopText">
+                    <div class="formTopTextContainer1">
+                        <p>This is not a real online service! You know you need something like this in your life to help
+                            you realize your deepest dreams.</p>
+                        <p>Sign up <em>now</em> to get started.</p>
+                    </div>
+                    <div class="formTopTextContainer2">
+                        <p>You <em>know</em> you want to.</p>
+                    </div>
+                </div>
+            </div>
+            <form action="">
+                <div class="formContent">
+                    <div class="formContentContainer">
+                        <h1>Let's do this!</h1>
+                        <ul>
+                            <li>
+                                <label for="first">FIRST NAME
+                                    <input type="text" name="firstName" id="first" required>
+                                </label>
+                                <label for="last">LAST NAME
+                                    <input type="text" name="lastName" id="last" required>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="email">EMAIL
+                                    <input type="email" name="email" id="email" required>
+                                </label>
+                                <label for="phone">PHONE NUMBER
+                                    <input type="tel" name="phone" id="phone" required>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="pass">PASSWORD
+                                    <input type="password" name="pass" id="pass" class="error" minlength="8">
+                                </label>
+                                <label for="cPass">CONFIRM PASSWORD
+                                    <input type="password" name="cPass" id="cPass" class="error" minlength="8">
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="errorPassword"></div>
+                    </div>
+                </div>
+                <div class="formBottom">
+                    <div class="formBottomContainer">
+                        <button>Create Account</button>
+                        <p class="login">Already have an account? <span><a href="loginpage">Log in</a></span></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

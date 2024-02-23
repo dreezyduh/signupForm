@@ -1,0 +1,154 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+:root {
+    font-family: "Roboto", "Times New Roman";
+    --formTopSize: 35vh;
+    --formBottomSize: 35vh;
+    --formWidthSize: 65vw;
+    --formPadding: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    margin: 0;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - var(--formWidthSize));
+    background-image: url("images/background.png");
+    background-size: cover;
+}
+
+.backgroundLogoColor {
+    display: flex;
+    background: rgba(0, 0, 0, 0.548);
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: calc(35vh - 108px);
+}
+
+.backgroundLogoText {
+    font-size: 50px;
+    color: white;
+    font-family: Georgia;
+}
+
+.backgroundBottom {
+    text-align: center;
+    margin-top: auto;
+    color: white;
+}
+
+.form {
+    background-color: rgb(235, 235, 235);
+    flex-grow: 1;
+}
+
+.formTop {
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+    height: var(--formTopSize);
+    padding: var(--formPadding);
+    width: 35vw;
+}
+
+.formTopText {
+    position: absolute;
+    bottom: 40px;
+}
+
+.formTopTextContainer1 > p {
+    margin: 0;
+
+}
+
+.formContent {
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.144);
+    
+}
+
+.formContentContainer {
+    padding: 10px;
+    margin-left: calc(var(--formPadding) - 10px);
+    flex-grow: 1;
+    
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: rgb(44, 44, 44);
+}
+
+input {
+    width: 200px;
+    border: 1px solid #ebe5e5;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #0055ff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.144);
+}
+
+ul{
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    display: flex;
+    list-style: none;
+    gap: 100px;
+}
+
+.formBottom {
+    height: var(--formBottomSize);
+}
+
+.formBottomContainer {
+    padding: 50px;
+}
+
+button {
+    background-color: rgb(94, 80, 61);
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+    border: none;
+    padding: 15px;
+    width: 220px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration-line: none;
+    color: rgb(94, 80, 61);
+    font-weight: bold;
+}
+
+.photo > a {
+    text-decoration-line: none;
+    color: rgb(219, 162, 82);
+    font-weight: bold;
+}
